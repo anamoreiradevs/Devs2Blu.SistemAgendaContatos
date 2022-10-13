@@ -61,13 +61,13 @@
             this.btnCompromissos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnContatos = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCloseWindow = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel3.SuspendLayout();
@@ -226,12 +226,12 @@
             this.txtSeachBar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSeachBar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSeachBar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSeachBar.Location = new System.Drawing.Point(199, 30);
+            this.txtSeachBar.Location = new System.Drawing.Point(208, 30);
             this.txtSeachBar.Name = "txtSeachBar";
             this.txtSeachBar.PasswordChar = '\0';
             this.txtSeachBar.PlaceholderText = "";
             this.txtSeachBar.SelectedText = "";
-            this.txtSeachBar.Size = new System.Drawing.Size(836, 24);
+            this.txtSeachBar.Size = new System.Drawing.Size(827, 24);
             this.txtSeachBar.TabIndex = 6;
             // 
             // guna2CustomGradientPanel9
@@ -494,6 +494,46 @@
             this.btnContatos.UseTransparentBackground = true;
             this.btnContatos.Click += new System.EventHandler(this.btnContact_Click);
             // 
+            // guna2GradientButton3
+            // 
+            this.guna2GradientButton3.BorderRadius = 10;
+            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton3.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton3.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_ellipsis;
+            this.guna2GradientButton3.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(1080, 12);
+            this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.Size = new System.Drawing.Size(27, 30);
+            this.guna2GradientButton3.TabIndex = 14;
+            // 
+            // guna2GradientButton4
+            // 
+            this.guna2GradientButton4.BorderRadius = 10;
+            this.guna2GradientButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton4.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton4.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton4.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_wifi;
+            this.guna2GradientButton4.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(1113, 12);
+            this.guna2GradientButton4.Name = "guna2GradientButton4";
+            this.guna2GradientButton4.Size = new System.Drawing.Size(20, 30);
+            this.guna2GradientButton4.TabIndex = 13;
+            // 
             // guna2GradientButton6
             // 
             this.guna2GradientButton6.BackColor = System.Drawing.Color.Transparent;
@@ -596,46 +636,6 @@
             this.btnCloseWindow.Size = new System.Drawing.Size(20, 30);
             this.btnCloseWindow.TabIndex = 3;
             this.btnCloseWindow.Click += new System.EventHandler(this.btnCloseWindow_Click);
-            // 
-            // guna2GradientButton3
-            // 
-            this.guna2GradientButton3.BorderRadius = 10;
-            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_ellipsis;
-            this.guna2GradientButton3.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2GradientButton3.Location = new System.Drawing.Point(1080, 12);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(27, 30);
-            this.guna2GradientButton3.TabIndex = 14;
-            // 
-            // guna2GradientButton4
-            // 
-            this.guna2GradientButton4.BorderRadius = 10;
-            this.guna2GradientButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton4.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_wifi;
-            this.guna2GradientButton4.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2GradientButton4.Location = new System.Drawing.Point(1113, 12);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.Size = new System.Drawing.Size(20, 30);
-            this.guna2GradientButton4.TabIndex = 13;
             // 
             // FormPaginaInicial
             // 
