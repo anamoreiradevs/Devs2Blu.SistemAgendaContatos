@@ -16,5 +16,22 @@ namespace SistemaAgendaContatos.Forms
         {
             InitializeComponent();
         }
+
+        private void btnCloseWindow_Click(object sender, EventArgs e)
+        {
+           this.Close();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnVoltarPagina_Click(object sender, EventArgs e)
+        {
+            FormPaginaInicial formPaginaInicial = new FormPaginaInicial();
+            this.Hide();
+            formPaginaInicial.ShowDialog();
+        }
     }
 }

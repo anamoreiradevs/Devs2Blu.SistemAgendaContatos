@@ -123,6 +123,16 @@ namespace SistemaAgendaContatos.Forms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_ellipsis {
+            get {
+                object obj = ResourceManager.GetObject("icon.ellipsis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_macos_close {
             get {
                 object obj = ResourceManager.GetObject("icon-macos-close", resourceCulture);
@@ -146,6 +156,16 @@ namespace SistemaAgendaContatos.Forms.Properties {
         internal static System.Drawing.Bitmap icon_schedule {
             get {
                 object obj = ResourceManager.GetObject("icon-schedule", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_wifi {
+            get {
+                object obj = ResourceManager.GetObject("icon-wifi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

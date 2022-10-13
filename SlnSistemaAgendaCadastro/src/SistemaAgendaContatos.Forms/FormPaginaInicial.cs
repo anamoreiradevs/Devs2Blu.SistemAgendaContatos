@@ -68,5 +68,11 @@ namespace SistemaAgendaContatos.Forms
             this.Hide();
             formCompromissos.ShowDialog();
         }
+
+        private void guna2GradientButton6_Click(object sender, EventArgs e)
+        {
+            FormCompromissos formCompromissos = new FormCompromissos();
+
+        }
     }
 }

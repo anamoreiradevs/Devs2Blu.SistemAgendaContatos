@@ -120,6 +120,9 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="guna2Elipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="guna2CustomGradientPanel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -8154,16 +8157,10 @@
   <data name="label11.Text" xml:space="preserve">
     <value>Herschel Walker at a recent campaign event in Georgia. (Photo: Illustration: Chris McGonigal/HuffPost; Photo: Getty Images At a little-noticed campaign event late last month, Georgia Republican Senate nominee Herschel Walker announced with great fanfare that his grandmother was “full-blood Cherokee” and that it means he is Native American.  “My mom just told me that my mom, grandmother, was full-blood Cherokee,” Walker said at the Sept. 28 event in Forsyth, Georgia. “So I’m Native American!”</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>It’s not significant news when a black hole shreds and consumes a star — that’s just what black holes do. However, when that black hole starts ejecting material from a star years later, then scientists start paying attention. Scientists were recently caught by surprise when a black hole in a galaxy located 665 million light years away exhibited this exact phenomenon.</value>
-  </data>
-  <metadata name="guna2Elipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>141, 17</value>
-  </metadata>
   <metadata name="guna2Elipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>265, 17</value>
   </metadata>
-  <metadata name="guna2Elipse4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>389, 17</value>
-  </metadata>
+  <data name="label7.Text" xml:space="preserve">
+    <value>It’s not significant news when a black hole shreds and consumes a star — that’s just what black holes do. However, when that black hole starts ejecting material from a star years later, then scientists start paying attention. Scientists were recently caught by surprise when a black hole in a galaxy located 665 million light years away exhibited this exact phenomenon.</value>
+  </data>
 </root>
