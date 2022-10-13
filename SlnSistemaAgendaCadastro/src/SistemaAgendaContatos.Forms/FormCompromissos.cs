@@ -17,9 +17,12 @@ namespace SistemaAgendaContatos.Forms
             InitializeComponent();
         }
 
+        #region Events
+
+
         private void btnCloseWindow_Click(object sender, EventArgs e)
         {
-           this.Close();
+            this.Close();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -33,5 +36,30 @@ namespace SistemaAgendaContatos.Forms
             this.Hide();
             formPaginaInicial.ShowDialog();
         }
+
+        private void FormCompromissos_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSchedule_Click(object sender, EventArgs e)
+        {
+            gridSchedule.Visible = true;
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            gridSchedule.Visible = true;
+            btnDelete.Enabled = true;
+        }
+        #endregion
+
+        #region Methods
+
+
     }
-}
+        #endregion
+    }
+
+
+

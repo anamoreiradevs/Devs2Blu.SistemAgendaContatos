@@ -23,14 +23,10 @@ namespace SistemaAgendaContatos.Forms
         {
             this.Close();
         }
-
-        private void btnMinWindow_Click(object sender, EventArgs e)
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            
+            this.WindowState = FormWindowState.Minimized;
         }
-        #endregion
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.msn.com/en-us/travel/news/stimulus-update-exact-date-direct-check-payments-worth-up-to-300-will-be-sent-out-revealed/ar-AA12Sz0d?cvid=e628632939f8432cfabf5e736f1150cb&ocid=winp2sv1plustaskbarhover");
@@ -50,29 +46,21 @@ namespace SistemaAgendaContatos.Forms
         {
             System.Diagnostics.Process.Start("https://www.msn.com/en-us/news/us/herschel-walker-says-his-grandma-was-full-blood-cherokee-his-mom-says-otherwise/ar-AA12TF8t?cvid=8269557d8a1944fb80aef8f3bdff7273&ocid=winp2sv1plustaskbarhover");
         }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void btnContact_Click(object sender, EventArgs e)
         {
-
+            FormContatos formContatos = new FormContatos();
+            this.Hide();
+            formContatos.ShowDialog();
         }
-
         private void btnCompromissos_Click(object sender, EventArgs e)
         {
-            
             FormCompromissos formCompromissos = new FormCompromissos();
             this.Hide();
             formCompromissos.ShowDialog();
         }
-
         private void guna2GradientButton6_Click(object sender, EventArgs e)
         {
-            FormCompromissos formCompromissos = new FormCompromissos();
-
         }
+        #endregion
     }
 }

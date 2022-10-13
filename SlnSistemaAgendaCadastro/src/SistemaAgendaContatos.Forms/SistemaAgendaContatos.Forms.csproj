@@ -229,6 +229,12 @@
     <Compile Include="FormCompromissos.Designer.cs">
       <DependentUpon>FormCompromissos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormContatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContatos.Designer.cs">
+      <DependentUpon>FormContatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPaginaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCompromissos.resx">
       <DependentUpon>FormCompromissos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContatos.resx">
+      <DependentUpon>FormContatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPaginaInicial.resx">
       <DependentUpon>FormPaginaInicial.cs</DependentUpon>
