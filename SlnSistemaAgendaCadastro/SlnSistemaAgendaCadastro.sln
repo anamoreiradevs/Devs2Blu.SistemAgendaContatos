@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgendaContatos.Forms", "src\SistemaAgendaContatos.Forms\SistemaAgendaContatos.Forms.csproj", "{BC8733B1-808B-444A-A1F5-F49AE7802D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemAgendaContatos.Models", "src\SistemAgendaContatos.Models\SistemAgendaContatos.Models.csproj", "{D62C89B0-F2F5-4BB5-BFC4-9B0783C2C597}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC8733B1-808B-444A-A1F5-F49AE7802D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8733B1-808B-444A-A1F5-F49AE7802D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8733B1-808B-444A-A1F5-F49AE7802D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8733B1-808B-444A-A1F5-F49AE7802D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62C89B0-F2F5-4BB5-BFC4-9B0783C2C597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62C89B0-F2F5-4BB5-BFC4-9B0783C2C597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62C89B0-F2F5-4BB5-BFC4-9B0783C2C597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62C89B0-F2F5-4BB5-BFC4-9B0783C2C597}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
