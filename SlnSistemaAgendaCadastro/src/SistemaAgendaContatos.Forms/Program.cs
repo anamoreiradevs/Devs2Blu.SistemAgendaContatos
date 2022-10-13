@@ -16,7 +16,8 @@ namespace SistemaAgendaContatos.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAgendaContato());
+            Application.Run(new FormPaginaInicial());
+
         }
     }
 }
