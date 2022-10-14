@@ -20,6 +20,6 @@ Importar Schema para o WorkBench
 
 * Windows Forms .NET Framework
 * [GunaUI](https://gunaui.com) - Framework para design do Forms
-* [FontAwesome](https://fontawesome.com) - Gerente de Dependência
+* [FontAwesome](https://fontawesome.com) -Framework para design do Forms
 
 
