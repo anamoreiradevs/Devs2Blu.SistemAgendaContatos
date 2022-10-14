@@ -88,7 +88,16 @@ namespace SistemaAgendaContatos.Forms
             }
 
         }
-      
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            FillClassContato();
+            if (Contato.Id > 0)
+            {
+                AtualizaContato();
+            }
+
+        }
+
         private void dataGridContatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Contato = new Contato();
@@ -217,5 +226,7 @@ namespace SistemaAgendaContatos.Forms
             rbInativo.Checked = Contato.Status.Equals(StatusEnum.I) ? true : false;
         }
         #endregion
+
+       
     }
 }

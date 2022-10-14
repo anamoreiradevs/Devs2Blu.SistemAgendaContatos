@@ -32,7 +32,7 @@ namespace SistemaAgendaContatos.Forms
             CompromissoRepository = new CompromissoRepository();
             Compromisso = new Compromisso();
             PopulaDataGridCompromissos();
-          
+
         }
 
         private void btnCloseWindow_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace SistemaAgendaContatos.Forms
                 LimparCampos();
             }
         }
-    
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -104,7 +104,6 @@ namespace SistemaAgendaContatos.Forms
         {
             Compromisso = new Compromisso();
             Compromisso.Id = (int)dataGridCompromissos.Rows[e.RowIndex].Cells["id"].Value;
-            /*Compromisso.Data = (string)(dataGridCompromissos.Rows[e.RowIndex].Cells["data_compromisso"].Value);*/
             Compromisso.Data = Convert.ToString(dataGridCompromissos.Rows[e.RowIndex].Cells["data_compromisso"].Value);
             Compromisso.Descricacao = (string)dataGridCompromissos.Rows[e.RowIndex].Cells["descricao"].Value;
         }
@@ -138,7 +137,7 @@ namespace SistemaAgendaContatos.Forms
             string columns, values;
             var status = rbConcluido.Checked ? StatusEnum.C : StatusEnum.R;
 
-            columns = "descricao,data_compromisso,status";
+            columns = "descricao, data_compromisso, status";
             values = $"'{Compromisso.Descricacao}','{Compromisso.Data}','{Compromisso.Status}'";
 
             try
@@ -161,7 +160,7 @@ namespace SistemaAgendaContatos.Forms
         {
             string columns;
             var status = rbConcluido.Checked ? StatusEnum.C : StatusEnum.R;
-            columns = $@"descricao = '{Compromisso.Descricacao}', data_compromisso = '{Compromisso.Data},{Compromisso.Status}'";
+            columns = $@"descricao = '{Compromisso.Descricacao}', data_compromisso = '{Compromisso.Data}', status = '{Compromisso.Status}'";
 
             try
             {
@@ -194,6 +193,7 @@ namespace SistemaAgendaContatos.Forms
         private void PopulaCamposForm()
         {
             txtDescricao.Text = Compromisso.Descricacao;
+            monthCalendar1.Refresh();
             rbConcluido.Checked = Compromisso.Status.Equals(StatusEnum.A) ? true : false;
             rbRemarcado.Checked = Compromisso.Status.Equals(StatusEnum.I) ? true : false;
         }
@@ -201,7 +201,7 @@ namespace SistemaAgendaContatos.Forms
 
         #endregion
 
-      
+
     }
 }
 

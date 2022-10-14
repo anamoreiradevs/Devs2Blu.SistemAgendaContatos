@@ -30,12 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.dataGridContatos = new System.Windows.Forms.DataGridView();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txtCelular = new Guna.UI2.WinForms.Guna2TextBox();
             this.rbInativo = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rbAtivo = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.cboUF = new System.Windows.Forms.ComboBox();
             this.maskCep = new System.Windows.Forms.MaskedTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtRua = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNumero = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBairro = new Guna.UI2.WinForms.Guna2TextBox();
@@ -65,16 +68,14 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.txtCelular = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dataGridContatos = new System.Windows.Forms.DataGridView();
+            this.btnEditar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridContatos)).BeginInit();
             this.guna2CustomGradientPanel3.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridContatos)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel9
@@ -90,6 +91,17 @@
             this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
             this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(1412, 625);
             this.guna2CustomGradientPanel9.TabIndex = 15;
+            // 
+            // dataGridContatos
+            // 
+            this.dataGridContatos.BackgroundColor = System.Drawing.Color.SlateBlue;
+            this.dataGridContatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridContatos.Location = new System.Drawing.Point(577, 29);
+            this.dataGridContatos.Name = "dataGridContatos";
+            this.dataGridContatos.Size = new System.Drawing.Size(811, 545);
+            this.dataGridContatos.TabIndex = 2;
+            this.dataGridContatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridContatos_CellClick);
+            this.dataGridContatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridContatos_CellDoubleClick);
             // 
             // guna2CustomGradientPanel3
             // 
@@ -117,6 +129,27 @@
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(413, 404);
             this.guna2CustomGradientPanel3.TabIndex = 1;
+            // 
+            // txtCelular
+            // 
+            this.txtCelular.BackColor = System.Drawing.Color.Transparent;
+            this.txtCelular.BorderRadius = 10;
+            this.txtCelular.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCelular.DefaultText = "";
+            this.txtCelular.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCelular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCelular.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCelular.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCelular.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCelular.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCelular.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCelular.Location = new System.Drawing.Point(210, 87);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.PasswordChar = '\0';
+            this.txtCelular.PlaceholderText = "Celular";
+            this.txtCelular.SelectedText = "";
+            this.txtCelular.Size = new System.Drawing.Size(155, 24);
+            this.txtCelular.TabIndex = 35;
             // 
             // rbInativo
             // 
@@ -185,6 +218,17 @@
             this.maskCep.Size = new System.Drawing.Size(85, 20);
             this.maskCep.TabIndex = 22;
             this.maskCep.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskCep_MaskInputRejected);
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(41, 192);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 18);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "CEP";
             // 
             // txtRua
             // 
@@ -442,6 +486,7 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 20;
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnEditar);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnClear);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnDelete);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
@@ -471,7 +516,7 @@
             this.btnClear.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_clear;
-            this.btnClear.Location = new System.Drawing.Point(0, 379);
+            this.btnClear.Location = new System.Drawing.Point(3, 428);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(151, 48);
             this.btnClear.TabIndex = 12;
@@ -554,7 +599,7 @@
             this.btnSave.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icons_add_user;
-            this.btnSave.Location = new System.Drawing.Point(0, 253);
+            this.btnSave.Location = new System.Drawing.Point(3, 265);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(151, 48);
             this.btnSave.TabIndex = 2;
@@ -666,48 +711,28 @@
             this.guna2Elipse6.BorderRadius = 5;
             this.guna2Elipse6.TargetControl = this.maskCep;
             // 
-            // txtCelular
+            // btnEditar
             // 
-            this.txtCelular.BackColor = System.Drawing.Color.Transparent;
-            this.txtCelular.BorderRadius = 10;
-            this.txtCelular.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCelular.DefaultText = "";
-            this.txtCelular.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCelular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCelular.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCelular.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCelular.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCelular.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCelular.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCelular.Location = new System.Drawing.Point(210, 87);
-            this.txtCelular.Name = "txtCelular";
-            this.txtCelular.PasswordChar = '\0';
-            this.txtCelular.PlaceholderText = "Celular";
-            this.txtCelular.SelectedText = "";
-            this.txtCelular.Size = new System.Drawing.Size(155, 24);
-            this.txtCelular.TabIndex = 35;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(41, 192);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 18);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "CEP";
-            // 
-            // dataGridContatos
-            // 
-            this.dataGridContatos.BackgroundColor = System.Drawing.Color.SlateBlue;
-            this.dataGridContatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridContatos.Location = new System.Drawing.Point(577, 29);
-            this.dataGridContatos.Name = "dataGridContatos";
-            this.dataGridContatos.Size = new System.Drawing.Size(811, 545);
-            this.dataGridContatos.TabIndex = 2;
-            this.dataGridContatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridContatos_CellClick);
-            this.dataGridContatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridContatos_CellDoubleClick);
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.BorderRadius = 20;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(230)))));
+            this.btnEditar.FillColor2 = System.Drawing.Color.DodgerBlue;
+            this.btnEditar.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icons_edit;
+            this.btnEditar.Location = new System.Drawing.Point(3, 374);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(151, 48);
+            this.btnEditar.TabIndex = 13;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseTransparentBackground = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // FormContatos
             // 
@@ -723,13 +748,13 @@
             this.Text = "FormContatos";
             this.Load += new System.EventHandler(this.FormContatos_Load);
             this.guna2CustomGradientPanel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridContatos)).EndInit();
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel3.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridContatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -775,5 +800,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCelular;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridContatos;
+        private Guna.UI2.WinForms.Guna2GradientButton btnEditar;
     }
 }
