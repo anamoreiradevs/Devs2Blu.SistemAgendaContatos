@@ -161,7 +161,7 @@ namespace SistemaAgendaContatos.Forms
         {
             string columns;
             var status = rbConcluido.Checked ? StatusEnum.C : StatusEnum.R;
-            columns = $@"descricao = '{Compromisso.Descricacao}', data_compromisso = '{Compromisso.Data},{Compromisso.Status}'";
+            columns = $@"descricao = '{Compromisso.Descricacao}', data_compromisso = '{Compromisso.Data}', status = '{Compromisso.Status}'";
 
             try
             {
@@ -194,6 +194,7 @@ namespace SistemaAgendaContatos.Forms
         private void PopulaCamposForm()
         {
             txtDescricao.Text = Compromisso.Descricacao;
+            monthCalendar1.Refresh();
             rbConcluido.Checked = Compromisso.Status.Equals(StatusEnum.A) ? true : false;
             rbRemarcado.Checked = Compromisso.Status.Equals(StatusEnum.I) ? true : false;
         }
