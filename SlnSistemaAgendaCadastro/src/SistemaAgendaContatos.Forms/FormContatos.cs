@@ -71,6 +71,15 @@ namespace SistemaAgendaContatos.Forms
                 LimparCampos();
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (Contato.Id > 0)
+            {
+                AtualizaContato();
+            }
+            btnDelete.Visible = true;
+        }
         private void btnClear_Click(object sender, EventArgs e)
         {
             LimparCampos();
@@ -217,5 +226,7 @@ namespace SistemaAgendaContatos.Forms
             rbInativo.Checked = Contato.Status.Equals(StatusEnum.I) ? true : false;
         }
         #endregion
+
+        
     }
 }
