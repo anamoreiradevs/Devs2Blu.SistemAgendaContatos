@@ -71,6 +71,15 @@ namespace SistemaAgendaContatos.Forms
                 LimparCampos();
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (Contato.Id > 0)
+            {
+                AtualizaContato();
+            }
+            btnDelete.Visible = true;
+        }
         private void btnClear_Click(object sender, EventArgs e)
         {
             LimparCampos();
@@ -227,6 +236,10 @@ namespace SistemaAgendaContatos.Forms
         }
         #endregion
 
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> 110a57744d848a71cac52cef720ada66cf438248
     }
 }

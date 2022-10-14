@@ -516,7 +516,11 @@
             this.btnClear.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_clear;
+<<<<<<< HEAD
             this.btnClear.Location = new System.Drawing.Point(3, 428);
+=======
+            this.btnClear.Location = new System.Drawing.Point(0, 316);
+>>>>>>> 110a57744d848a71cac52cef720ada66cf438248
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(151, 48);
             this.btnClear.TabIndex = 12;
@@ -539,12 +543,13 @@
             this.btnDelete.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icon_delete1;
-            this.btnDelete.Location = new System.Drawing.Point(3, 319);
+            this.btnDelete.Location = new System.Drawing.Point(0, 424);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(151, 48);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseTransparentBackground = true;
+            this.btnDelete.Visible = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // guna2CustomGradientPanel2
@@ -599,7 +604,11 @@
             this.btnSave.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icons_add_user;
+<<<<<<< HEAD
             this.btnSave.Location = new System.Drawing.Point(3, 265);
+=======
+            this.btnSave.Location = new System.Drawing.Point(0, 262);
+>>>>>>> 110a57744d848a71cac52cef720ada66cf438248
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(151, 48);
             this.btnSave.TabIndex = 2;
@@ -726,7 +735,11 @@
             this.btnEditar.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Image = global::SistemaAgendaContatos.Forms.Properties.Resources.icons_edit;
+<<<<<<< HEAD
             this.btnEditar.Location = new System.Drawing.Point(3, 374);
+=======
+            this.btnEditar.Location = new System.Drawing.Point(0, 370);
+>>>>>>> 110a57744d848a71cac52cef720ada66cf438248
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(151, 48);
             this.btnEditar.TabIndex = 13;
