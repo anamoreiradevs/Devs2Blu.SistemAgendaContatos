@@ -205,6 +205,7 @@ namespace SistemaAgendaContatos.Forms
             maskCep.Clear();
             cboUF.Text = "";
             txtTelefone.Clear();
+            txtCelular.Clear();
             txtEmail.Text = "";
             txtCidade.Clear();
             txtBairro.Clear();

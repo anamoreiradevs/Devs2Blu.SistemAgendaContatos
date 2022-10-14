@@ -1,0 +1,25 @@
+
+INSERT INTO estados (uf, descricao) VALUES
+                ('AC','Acre'),
+                ('AL','Alagoas'),
+                ('BA','Bahia'),
+                ('CE','Ceará'),
+                ('DF','Distrito Federal'),
+                ('ES','Espírito Santo'),
+                ('GO','Goiás'),
+                ('MA','Maranhão'),
+                ('MT','Mato Grosso'),
+                ('MS','Mato Grosso do Sul'),
+                ('MG','Minas Gerais'),
+                ('PB','Paraíba'),
+                ('PR','Paraná'),
+                ('PE','Pernambuco'),
+                ('PI','Piauí'),
+                ('RJ','Rio de Janeiro'),
+                ('RN','Rio Grande do Norte'),
+                ('RS','Rio Grande do Sul'),
+                ('RO','Rondônia'),
+                ('RR','Roraima'),
+                ('SE','Sergipe'),
+                ('TO','Tocantins');
+
