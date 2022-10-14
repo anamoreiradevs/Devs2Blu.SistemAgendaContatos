@@ -95,7 +95,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(12, 89);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(154, 470);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(154, 494);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
             // btnSchedule
@@ -459,7 +459,7 @@
             this.guna2CustomGradientPanel9.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(41)))), ((int)(((byte)(123)))));
             this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(169, 89);
             this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
-            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(980, 470);
+            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(980, 494);
             this.guna2CustomGradientPanel9.TabIndex = 12;
             // 
             // guna2CustomGradientPanel6
@@ -642,7 +642,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1161, 571);
+            this.ClientSize = new System.Drawing.Size(1161, 595);
             this.Controls.Add(this.guna2CustomGradientPanel9);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.panel1);

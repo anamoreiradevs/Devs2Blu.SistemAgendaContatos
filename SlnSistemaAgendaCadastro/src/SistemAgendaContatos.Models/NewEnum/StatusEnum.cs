@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemAgendaContatos.Models.Enum
 {
-    public enum StatusCompromisso
+    public enum StatusEnum
     {
         [Description("Aberto")]
         A = 0,
