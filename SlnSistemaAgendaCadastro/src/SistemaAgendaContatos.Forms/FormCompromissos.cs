@@ -105,7 +105,7 @@ namespace SistemaAgendaContatos.Forms
             Compromisso = new Compromisso();
             Compromisso.Id = (int)dataGridCompromissos.Rows[e.RowIndex].Cells["id"].Value;
             /*Compromisso.Data = (string)(dataGridCompromissos.Rows[e.RowIndex].Cells["data_compromisso"].Value);*/
-            Compromisso.Data = Convert.ToString(dataGridCompromissos.Rows[e.RowIndex].Cells["data_compromisso"].Value);
+            Compromisso.Data = (DateTime)dataGridCompromissos.Rows[e.RowIndex].Cells["data_compromisso"].Value;
             Compromisso.Descricacao = (string)dataGridCompromissos.Rows[e.RowIndex].Cells["descricao"].Value;
         }
 
@@ -139,7 +139,7 @@ namespace SistemaAgendaContatos.Forms
             var status = rbConcluido.Checked ? StatusEnum.C : StatusEnum.R;
 
             columns = "descricao,data_compromisso,status";
-            values = $"'{Compromisso.Descricacao}','{Compromisso.Data}','{Compromisso.Status}'";
+            values = $"'{Compromisso.Descricacao}','{Compromisso.Data.ToString("yyyy-MM-dd HH-mm-ss")}','{Compromisso.Status}'";
 
             try
             {
@@ -161,8 +161,8 @@ namespace SistemaAgendaContatos.Forms
         {
             string columns;
             var status = rbConcluido.Checked ? StatusEnum.C : StatusEnum.R;
-            columns = $@"descricao = '{Compromisso.Descricacao}', data_compromisso = '{Compromisso.Data}', status = '{Compromisso.Status}'";
-
+            columns = $@"descricao = '{Compromisso.Descricacao}', data_compromisso = '{Compromisso.Data.ToString("yyyy-MM-dd HH-mm-ss")}', status = '{Compromisso.Status}'";
+            
             try
             {
                 int idUpdate = CompromissoRepository.Update(columns, Compromisso.Id);
@@ -182,7 +182,7 @@ namespace SistemaAgendaContatos.Forms
         private void FillClassCompromisso()
         {
             Compromisso.Descricacao = txtDescricao.Text;
-            Compromisso.Data = monthCalendar1.SelectionStart.Date.ToString("yyyy-MM-dd");
+            Compromisso.Data = monthCalendar1.SelectionStart;
             Compromisso.Status = (rbConcluido.Checked) ? StatusEnum.C : StatusEnum.R;
         }
 

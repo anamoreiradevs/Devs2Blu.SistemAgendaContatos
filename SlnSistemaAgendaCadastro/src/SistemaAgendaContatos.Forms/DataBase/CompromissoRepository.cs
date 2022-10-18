@@ -19,7 +19,7 @@ namespace SistemaAgendaContatos.Forms.DataBase
             var r = base.FindById(id);
             while (r.Read())
             {
-                compromisso = new Compromisso(r.GetInt32("id"), r.GetString("descricao"), GetStatus(r.GetString("status")), r.GetString("data_compromisso"));
+                compromisso = new Compromisso(r.GetInt32("id"), r.GetString("descricao"), GetStatus(r.GetString("status")), r.GetDateTime("data_compromisso"));
             }
 
             return compromisso;
